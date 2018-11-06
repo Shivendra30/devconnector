@@ -15,7 +15,7 @@ class AddExperience extends Component {
 			location: '',
 			from: '',
 			to: '',
-			current: '',
+			current: false,
 			description: '',
 			errors: '',
 			disabled: ''
@@ -117,7 +117,7 @@ class AddExperience extends Component {
 										type="checkbox"
 										name="current"
 										value={this.state.current}
-										check={this.state.current.toString()}
+										check={this.state.current}
 										id="current"
 										onClick={() =>
 											this.setState({

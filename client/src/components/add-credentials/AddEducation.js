@@ -15,7 +15,7 @@ class AddEducation extends Component {
 			fieldofstudy: '',
 			from: '',
 			to: '',
-			current: '',
+			current: false,
 			description: '',
 			disabled: '',
 			errors: ''
@@ -89,7 +89,7 @@ class AddEducation extends Component {
 									value={this.state.fieldofstudy}
 									onChange={this.onChange}
 									error={errors.fieldofstudy}
-									placeholder="Field of Study"
+									placeholder="* Field of Study"
 									name="fieldofstudy"
 								/>
 								<h6>From Date</h6>
@@ -117,7 +117,7 @@ class AddEducation extends Component {
 										type="checkbox"
 										name="current"
 										value={this.state.current}
-										check={this.state.current.toString()}
+										check={this.state.current}
 										id="current"
 										onClick={() =>
 											this.setState({
@@ -130,7 +130,7 @@ class AddEducation extends Component {
 										className="form-check-label"
 										htmlFor="current"
 									>
-										Current Job
+										Current School
 									</label>
 								</div>
 								<TextAreaFieldGroup
