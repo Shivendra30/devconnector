@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "Social network for developers",
   "main": "server.js",
+  "engines": {
+    "node": "8.12.0",
+    "npm": "6.4.1"
+  },
   "scripts": {
     "client-install": "cd client && npm intall",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "cd client && npm start",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODCTION=false npm install --prefix client && npm run build --prefix client", //to run our dev dependencies we need to set it to false
-
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm intall --prefix client && npm run build --prefix client"
   },
   "author": "Shivendra Nath Misra",
   "license": "MIT",
