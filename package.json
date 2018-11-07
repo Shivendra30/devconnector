@@ -8,7 +8,9 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "cd client && npm start",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODCTION=false npm install --prefix client && npm run build --prefix client", //to run our dev dependencies we need to set it to false
+
   },
   "author": "Shivendra Nath Misra",
   "license": "MIT",
