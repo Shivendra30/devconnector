@@ -25,6 +25,12 @@ class Navbar extends Component {
 						Dashboard{' '}
 					</Link>
 				</li>
+				<li>
+					<Link to="/feed" className="nav-link">
+						{' '}
+						Post Feed{' '}
+					</Link>
+				</li>
 				<li className="nav-item">
 					<a
 						href="#"
