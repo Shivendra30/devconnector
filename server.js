@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('/client/build'));
 	//Load the index.html file for any route that we hit
 	app.get('*', (req, res) => {
-		res.sendFile(path.resolved(__dirname, 'client', 'build', 'index.html'));
+		res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 	});
 }
 
