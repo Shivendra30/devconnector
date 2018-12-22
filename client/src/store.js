@@ -1,6 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import rootReducer from './reducers/index.js';
+//thunk helps us use dispatch in actions
 
 const initialState = {};
 const middleware = [thunk]; //we can now add any middleware that we want to this array
